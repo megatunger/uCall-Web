@@ -1,0 +1,362 @@
+<div class="wrapper">
+  <!-- Navbar Section -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light nav-white fixed-top">
+    <div class="container container-m">
+      <a class="navbar-brand" href="#">
+        <img id="navbar-logo" class="img-fluid" style="max-width: 160px" src="<%= image_path('ucall_logo_white.png') %>"/>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#main">Sản phẩm</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#features">Tính năng</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pricing">Giá</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#reviews">Đánh giá</a></li>
+          <li class="nav-item"><a class="btn-cta nav-link js-scroll-trigger" href="<%= @app_link %>">Truy cập hệ thống</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav><!-- Navbar End -->
+
+
+  <div id="main" class="main">
+    <div class="hero2">
+      <div class="container-m">
+        <div class="hero-inner yd_flx2">
+          <div class="hero-content flx_1">
+            <div class="hero-content-inner">
+              <h4>Ucall - Tổng đài tự động sử dụng AI</h4>
+              <h2>Chăm sóc khách hàng của bạn 24/7</h2>
+              <p>Chúng tôi cung cấp giải pháp giúp bạn có thể quan tâm đến từng khách hàng mọi lúc, mọi nơi.</p>
+              <a class="btn-action btn-alt" href="<%= @app_link %>">Truy cập</a>
+            </div>
+          </div>
+          <div class="hero-form flx_2">
+            <form id="contactForm" data-toggle="validator" class="shake">
+              <div class="row">
+                <div class="form-group col-sm-12">
+                  <h4 class="font-weight-bold">Trải nghiệm cuộc gọi mẫu</h4>
+                  <p class="text-dark">Hãy nhập số điện thoại của bạn và chúng tôi sẽ gọi điện. Cuộc gọi này hoàn toàn miễn phí</p>
+                </div>
+                <div class="form-group col-sm-12">
+                  <label for="name" class="h4">Số điện thoại</label>
+                  <input type="text" class="form-control" id="name" placeholder="0967134899" required data-error="Name is required">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <button type="submit" id="form-submit" class="btn-action">Gọi điện</button>
+              <div id="msgSubmit" class="h3 text-center hidden"></div>
+              <div class="clearfix"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Features Section -->
+    <div id="features" class="flex-split">
+      <div class="container-s">
+        <div class="flex-intro align-center wow fadeIn">
+          <h2>Tính năng</h2>
+          <p>Chúng tôi thiết kế những công cụ đơn giản, linh hoạt và mạnh mẽ. Bạn có thể dựng tổng đài cho công việc kinh doanh chỉ mất chưa đầy 10 phút.</p>
+        </div>
+        <div class="flex-inner align-center">
+          <div class="f-image wow">
+            <img class="img-fluid" src="<%= image_path("screenshot_1.png") %>" alt="Feature">
+          </div>
+          <div class="f-text">
+            <div class="left-content">
+              <div class="tld">
+                <div class="tld-text">
+                  <h6>1</h6>
+                </div>
+              </div>
+              <h2>Tổng đài thông minh</h2>
+              <p>Một tổng đài viên thực thụ. Sẵn sàng trả lời mọi câu hỏi của khách hàng</p>
+              <a href="#">Tìm hiểu công nghệ</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-inner flex-inverted align-center">
+          <div class="f-image f-image-inverted">
+            <img class="img-fluid" src="<%= image_path("screenshot_2.png") %>" alt="Feature">
+          </div>
+          <div class="f-text">
+            <div class="left-content">
+              <div class="tld tld2">
+                <div class="tld-text">
+                  <h6>2</h6>
+                </div>
+              </div>
+              <h2>Cuộc gọi Marketing / Cuộc gọi tự động</h2>
+              <p>Tiếp cận khách hàng của bạn không giới hạn, linh hoạt theo n tình huống</p>
+              <a href="#">Khám phá các tình huống</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-inner align-center">
+          <div class="f-image wow">
+            <img class="img-fluid" src="<%= image_path("screenshot_3.png") %>" alt="Feature">
+          </div>
+          <div class="f-text">
+            <div class="left-content">
+              <div class="tld">
+                <div class="tld-text">
+                  <h6>3</h6>
+                </div>
+              </div>
+              <h2>Tích hợp CRM</h2>
+              <p>Sẵn sàng với các nền tảng CRM nổi tiếng như Salesforce, Base</p>
+              <a href="#">Tài liệu thích hợp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- YD Custom Feature Section -->
+    <div class="yd_ft_cst ft_cst2">
+      <div class="container">
+        <div class="row">
+          <div class="flex-inner">
+            <div class="f-image">
+              <img class="img-fluid" src="<%= image_path("feature3.png") %>" alt="Feature">
+            </div>
+            <div class="f-text">
+              <div class="split_text">
+                <div class="split_text_inner">
+                  <h4>Tối ưu chi phí</h4>
+                  <h2>Tiết kiệm 70% chi phí chăm sóc khách hàng</h2>
+                  <p>Giá bắt đầu từ
+                  </p>
+                  <a class="btn-action" href="#">Know More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- YD Flex Single Feature Section -->
+    <div class="ft_single">
+      <div class="container">
+        <div class="yd_flex">
+          <div class="yd_flex_1">
+            <div class="flex_content">
+              <h2>Mobile Integration</h2>
+              <p>Grow your business with our secure storage, powerful computing, and integrated analytics at affordable price.</p>
+              <a class="btn-action btn-alt" href="#">Get Started</a>
+            </div>
+          </div>
+          <div class="yd_flex_2">
+            <div class="flex_main">
+              <div class="flex_sub">
+                <div class="sub_image">
+                  <img src="assets/icons/c.png" width="60" alt="Icon">
+                </div>
+                <div class="sub_text">
+                  <h4>Go Mobile</h4>
+                  <p class="d-none d-md-block">Some lorem ipsum text filler lorem ipsum text</p>
+                </div>
+              </div>
+              <div class="flex_sub">
+                <div class="sub_image">
+                  <img src="assets/icons/b.png" width="60" alt="Icon">
+                </div>
+                <div class="sub_text">
+                  <h4>Video</h4>
+                  <p class="d-none d-md-block">Some lorem ipsum text filler lorem ipsum text</p>
+                </div>
+              </div>
+              <div class="flex_sub">
+                <div class="sub_image">
+                  <img src="assets/icons/g.png" width="60" alt="Icon">
+                </div>
+                <div class="sub_text">
+                  <h4>Asset Track</h4>
+                  <p class="d-none d-md-block">Some lorem ipsum text filler lorem ipsum text</p>
+                </div>
+              </div>
+              <div class="flex_sub">
+                <div class="sub_image">
+                  <img src="assets/icons/e.png" width="60" alt="Icon">
+                </div>
+                <div class="sub_text">
+                  <h4>Profiling</h4>
+                  <p class="d-none d-md-block">Some lorem ipsum text filler lorem ipsum text</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- YD Custom Feature Section -->
+    <div class="yd_ft_cst">
+      <div class="container">
+        <div class="row">
+          <div class="flex-inner">
+            <div class="f-text">
+              <div class="split_text">
+                <div class="split_text_inner">
+                  <h4>Latest News</h4>
+                  <h2>Responsive Landing Pages.</h2>
+                  <p>Just to justify the above heading some blah blah text needs to be
+                    placed here to make it look good.
+                  </p>
+                  <ul>
+                    <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Adhoc Report Builders</span></li>
+                    <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Live Customer Profiling</span></li>
+                  </ul>
+                  <a class="btn-action btn-alt" href="#">Know more</a>
+                </div>
+              </div>
+            </div>
+            <div class="f-image">
+              <img class="img-fluid" src="assets/images/feature4.png" height="300" alt="Feature">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Pricing Section -->
+    <div id="pricing" class="yd_prc2">
+      <div class="container-s">
+        <div class="pricing-intro">
+          <h1>Giá cước linh hoạt</h1>
+          <p>
+            Gói cước chúng tôi được thiết kế đa dạng để giúp bạn bắt đầu co giãn
+            chi phí linh hoạt với nguồn lực sẵn có
+          </p>
+        </div>
+        <div class="yd_flx2">
+          <div class="flx_1">
+            <div class="split_text">
+              <div class="split_text_inner">
+                <h2>Cơ bản</h2>
+                <span>499 VNĐ</span>
+                <div class="sub_span">/ phút</div>
+                <ul class="prc_features">
+                  <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Gọi điện Marketing</span></li>
+                  <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Miễn phí cước viễn thông</span></li>
+                  <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Gọi ~300 khách hàng 1 giờ</span></li>
+                  <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Hỗ trợ triển khai</span></li>
+                </ul>
+                <a class="btn-action" href="#">Lựa Chọn</a>
+              </div>
+            </div>
+          </div>
+          <div class="flx_2">
+            <div class="split_text">
+              <div class="split_text_inner">
+                <h2>Nâng cao</h2>
+                <span>899 VNĐ</span>
+                <div class="sub_span">/ phút</div>
+                <ul class="prc_features">
+                  <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Gọi điện Marketing</span></li>
+                  <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Tổng đài thông minh</span></li>
+                  <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Trình soạn kịch bản</span></li>
+                  <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Tích hợp CRM</span></li>
+                  <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Miễn phí cước viễn thông</span></li>
+                  <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Gọi ~300 khách hàng 1 giờ</span></li>
+                  <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Xử lí 10 cuộc gọi 1 lúc</span></li>
+                  <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Hỗ trợ triển khai</span></li>
+                </ul>
+                <a class="btn-action btn-alt" href="#">Lựa chọn tốt nhất</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Background Reviews -->
+    <div id="reviews" class="yd_rev_bg">
+      <div class="container">
+        <div class="rev_block">
+          <div class="rev_block_inner">
+            <div class="review-cards owl-carousel owl-theme">
+              <div class="rev_txt">
+                <div class="rev_img">
+                  <img class="rounded-circle" src="" alt="Review">
+                </div>
+                <h3>Peter Murray</h3>
+                <p>"Grow your business with our secure storage, powerful compute, and integrated data analytics.
+                  Just to justify the above heading some blah blah text needs to be placed here to make it look good."
+                </p>
+                <h6>VP Sales, Act Corp.</h6>
+                <h6>Paris, France.</h6>
+              </div>
+              <div class="rev_txt">
+                <div class="rev_img">
+                  <img class="rounded-circle" src="assets/icons/rev2.png" alt="Review">
+                </div>
+                <h3>Naren Kumar</h3>
+                <p>"Grow your business with our secure storage, powerful compute, and integrated data analytics.
+                  Just to justify the above heading some blah blah text needs to be placed here to make it look good."
+                </p>
+                <h6>Manager, Deloitte Ind.</h6>
+                <h6>Mumbai, India.</h6>
+              </div>
+              <div class="rev_txt">
+                <div class="rev_img">
+                  <img class="rounded-circle" src="assets/icons/rev3.png" alt="Review">
+                </div>
+                <h3>Joseph Stalin</h3>
+                <p>"Grow your business with our secure storage, powerful compute, and integrated data analytics.
+                  Just to justify the above heading some blah blah text needs to be placed here to make it look good."
+                </p>
+                <h6>DM, Aprilla Ltd.</h6>
+                <h6>London, England.</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Call to action -->
+    <div class="yd_cta_box">
+      <div class="containe">
+        <div class="cta_box">
+          <div class="cta_box_inner">
+            <div class="col-sm-12 col-md-12">
+              <h4>Liên hệ tư vấn giải pháp</h4>
+              <h2>Hãy giúp chúng tôi hiểu bạn. Thành công của bạn là động lực với chúng tôi.</h2>
+              <a class="btn-action btn-alt" href="#">Liên hệ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row text-center">
+          <div class="footer-logo text-center w-100">
+            <img id="navbar-logo" class="w-100 img-fluid" style="max-width: 160px" src="<%= image_path("ucall_logo_white.png") %>"/>
+          </div>
+        </div>
+        <!-- Scroll To Top -->
+        <a id="back-top" class="back-to-top js-scroll-trigger" href="#main"></a>
+        <!-- Scroll To Top Ends-->
+      </div>
+    </div>
+
+  </div> <!-- Main -->
+</div>

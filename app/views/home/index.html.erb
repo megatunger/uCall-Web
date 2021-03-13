@@ -41,8 +41,13 @@
                   <p class="text-dark">Hãy nhập số điện thoại của bạn và chúng tôi sẽ gọi điện. Cuộc gọi này hoàn toàn miễn phí</p>
                 </div>
                 <div class="form-group col-sm-12">
-                  <label for="name" class="h4">Số điện thoại</label>
-                  <input type="text" class="form-control" id="name" placeholder="0967134899" required data-error="Name is required">
+                  <label for="name" class="h4">Tên của bạn</label>
+                  <input type="text" class="form-control" id="name" placeholder="Tùng" required data-error="Vui lòng nhập tên bạn">
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group col-sm-12">
+                  <label for="phone" class="h4">Số điện thoại</label>
+                  <input type="text" class="form-control" id="phone" placeholder="0967134899" required data-error="Vui lòng nhập số điện thoại">
                   <div class="help-block with-errors"></div>
                 </div>
               </div>
@@ -126,16 +131,13 @@
         <div class="row">
           <div class="flex-inner">
             <div class="f-image">
-              <img class="img-fluid" src="<%= image_path("feature3.png") %>" alt="Feature">
+              <img class="img-fluid" src="<%= image_path("magnet-me-315vPGsAFUk-unsplash.jpg") %>" alt="Feature">
             </div>
             <div class="f-text">
               <div class="split_text">
                 <div class="split_text_inner">
                   <h4>Tối ưu chi phí</h4>
                   <h2>Tiết kiệm 70% chi phí chăm sóc khách hàng</h2>
-                  <p>Giá bắt đầu từ
-                  </p>
-                  <a class="btn-action" href="#">Know More</a>
                 </div>
               </div>
             </div>
@@ -151,47 +153,47 @@
         <div class="yd_flex">
           <div class="yd_flex_1">
             <div class="flex_content">
-              <h2>Mobile Integration</h2>
-              <p>Grow your business with our secure storage, powerful computing, and integrated analytics at affordable price.</p>
-              <a class="btn-action btn-alt" href="#">Get Started</a>
+              <h2>Ứng dụng</h2>
+              <p>Với công cụ xây dựng kịch bản thông minh, nền tảng uCall sẵn sàng cho mọi tình huống đa dạng nhất của khách hàng</p>
+              <a class="btn-action btn-alt" href="#">Tìm hiểu</a>
             </div>
           </div>
           <div class="yd_flex_2">
             <div class="flex_main">
               <div class="flex_sub">
                 <div class="sub_image">
-                  <img src="assets/icons/c.png" width="60" alt="Icon">
+                  <img src="<%= image_path("c.png") %>" width="60" alt="Icon">
                 </div>
                 <div class="sub_text">
-                  <h4>Go Mobile</h4>
-                  <p class="d-none d-md-block">Some lorem ipsum text filler lorem ipsum text</p>
+                  <h4>Tài chính</h4>
+                  <p class="d-none d-md-block">Gọi điện nhắc nợ tín dụng cho khách hàng</p>
                 </div>
               </div>
               <div class="flex_sub">
                 <div class="sub_image">
-                  <img src="assets/icons/b.png" width="60" alt="Icon">
+                  <img src="<%= image_path("b.png") %>" width="60" alt="Icon">
                 </div>
                 <div class="sub_text">
-                  <h4>Video</h4>
-                  <p class="d-none d-md-block">Some lorem ipsum text filler lorem ipsum text</p>
+                  <h4>Giáo dục</h4>
+                  <p class="d-none d-md-block">Tổng đài giải đáp thắc mắc tự động cho phụ huynh</p>
                 </div>
               </div>
               <div class="flex_sub">
                 <div class="sub_image">
-                  <img src="assets/icons/g.png" width="60" alt="Icon">
+                  <img src="<%= image_path("g.png") %>" width="60" alt="Icon">
                 </div>
                 <div class="sub_text">
-                  <h4>Asset Track</h4>
-                  <p class="d-none d-md-block">Some lorem ipsum text filler lorem ipsum text</p>
+                  <h4>Logistic</h4>
+                  <p class="d-none d-md-block">Gọi điện xác nhận đơn hàng, giờ giao hàng,...</p>
                 </div>
               </div>
               <div class="flex_sub">
                 <div class="sub_image">
-                  <img src="assets/icons/e.png" width="60" alt="Icon">
+                  <img src="<%= image_path("e.png") %>" width="60" alt="Icon">
                 </div>
                 <div class="sub_text">
-                  <h4>Profiling</h4>
-                  <p class="d-none d-md-block">Some lorem ipsum text filler lorem ipsum text</p>
+                  <h4>Marketing</h4>
+                  <p class="d-none d-md-block">Gọi điện tiếp thị sản phẩm</p>
                 </div>
               </div>
             </div>
@@ -209,21 +211,23 @@
             <div class="f-text">
               <div class="split_text">
                 <div class="split_text_inner">
-                  <h4>Latest News</h4>
-                  <h2>Responsive Landing Pages.</h2>
-                  <p>Just to justify the above heading some blah blah text needs to be
-                    placed here to make it look good.
+                  <h4>Công nghệ lõi</h4>
+                  <h2>AI as a Service</h2>
+                  <p>Chúng tôi lấy công nghệ AI làm trọng tâm của sản phẩm, kết hợp với nền tảng Web đem đến một ứng dụng tiếp cận dễ dàng nhất với khách hàng
                   </p>
                   <ul>
-                    <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Adhoc Report Builders</span></li>
-                    <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Live Customer Profiling</span></li>
+                    <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Tổng hợp giọng nói</span></li>
+                    <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Nhận diện giọng nói</span></li>
+                    <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Nền tảng Web</span></li>
+                    <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Cập nhật real-time</span></li>
+                    <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Auto-scaling</span></li>
                   </ul>
-                  <a class="btn-action btn-alt" href="#">Know more</a>
+                  <a class="btn-action btn-alt" href="#">Blog công nghệ</a>
                 </div>
               </div>
             </div>
             <div class="f-image">
-              <img class="img-fluid" src="assets/images/feature4.png" height="300" alt="Feature">
+              <img class="img-fluid" src="<%= image_path("thisisengineering-raeng-64YrPKiguAE-unsplash.jpg") %>" height="300" alt="Feature">
             </div>
           </div>
         </div>
@@ -278,56 +282,17 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- Background Reviews -->
-    <div id="reviews" class="yd_rev_bg">
-      <div class="container">
-        <div class="rev_block">
-          <div class="rev_block_inner">
-            <div class="review-cards owl-carousel owl-theme">
-              <div class="rev_txt">
-                <div class="rev_img">
-                  <img class="rounded-circle" src="" alt="Review">
-                </div>
-                <h3>Peter Murray</h3>
-                <p>"Grow your business with our secure storage, powerful compute, and integrated data analytics.
-                  Just to justify the above heading some blah blah text needs to be placed here to make it look good."
-                </p>
-                <h6>VP Sales, Act Corp.</h6>
-                <h6>Paris, France.</h6>
-              </div>
-              <div class="rev_txt">
-                <div class="rev_img">
-                  <img class="rounded-circle" src="assets/icons/rev2.png" alt="Review">
-                </div>
-                <h3>Naren Kumar</h3>
-                <p>"Grow your business with our secure storage, powerful compute, and integrated data analytics.
-                  Just to justify the above heading some blah blah text needs to be placed here to make it look good."
-                </p>
-                <h6>Manager, Deloitte Ind.</h6>
-                <h6>Mumbai, India.</h6>
-              </div>
-              <div class="rev_txt">
-                <div class="rev_img">
-                  <img class="rounded-circle" src="assets/icons/rev3.png" alt="Review">
-                </div>
-                <h3>Joseph Stalin</h3>
-                <p>"Grow your business with our secure storage, powerful compute, and integrated data analytics.
-                  Just to justify the above heading some blah blah text needs to be placed here to make it look good."
-                </p>
-                <h6>DM, Aprilla Ltd.</h6>
-                <h6>London, England.</h6>
+          <div class="flx_1">
+            <div class="split_text">
+              <div class="split_text_inner">
+                <h2>Tư vấn giải pháp riêng</h2>
+                <span>Vui lòng liên hệ</span>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
 
     <!-- Call to action -->
     <div class="yd_cta_box">

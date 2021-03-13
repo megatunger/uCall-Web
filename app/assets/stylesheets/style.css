@@ -1332,7 +1332,7 @@ body {
 .yd_prc2 .yd_flx2 .flx_2 {
 	padding: 50px 30px;
 	text-align: center;
-	border-radius: 0 0 20px 20px;
+	border-radius: 20px;
 }
 
 .yd_prc2 .yd_flx2 .flx_1 {
@@ -1340,7 +1340,7 @@ body {
 	padding: 50px 30px;
 	background: #fafafa;
 	text-align: center;
-	border-radius: 20px 20px 0 0;
+	border-radius: 20px;
 }
 
 .yd_prc2 .yd_flx2 .btn-action {

@@ -27,14 +27,14 @@
         <div class="hero-inner yd_flx2">
           <div class="hero-content flx_1">
             <div class="hero-content-inner">
-              <h4>Ucall - Tổng đài tự động sử dụng AI</h4>
-              <h2>Chăm sóc khách hàng của bạn 24/7</h2>
-              <p>Chúng tôi cung cấp giải pháp giúp bạn có thể quan tâm đến từng khách hàng mọi lúc, mọi nơi.</p>
-              <a class="btn-action btn-alt" href="<%= @app_link %>">Truy cập</a>
+              <h2>Nền Tảng Tổng Đài Trí Tuệ Nhân Tạo Cho Doanh Nghiệp</h2>
+              <h4>Giải pháp toàn diện giúp doanh nghiệp của bạn chăm sóc khách hàng 24/7 <span class="text-white">đầu tiên</span> tại Việt Nam</h4>
+              <a class="btn-action btn-alt mr-2" href="<%= @app_link %>">Thử ngay</a>
+              <a class="btn-action btn-alt" style="border: 0px!important; background: white" href="mailto:hoangminhtam.work@gmail.com">Liên hệ tư vấn</a>
             </div>
           </div>
           <div class="hero-form flx_2">
-            <form id="contactForm" data-toggle="validator" class="shake">
+            <%= simple_form_for 'call_request', url: redirect_demo_path, html: { id: 'contactForm', class: "shake"} do |f| %>
               <div class="row">
                 <div class="form-group col-sm-12">
                   <h4 class="font-weight-bold">Trải nghiệm cuộc gọi mẫu</h4>
@@ -42,19 +42,19 @@
                 </div>
                 <div class="form-group col-sm-12">
                   <label for="name" class="h4">Tên của bạn</label>
-                  <input type="text" class="form-control" id="name" placeholder="Tùng" required data-error="Vui lòng nhập tên bạn">
-                  <div class="help-block with-errors"></div>
+                  <%= f.input :name, label: false, input_html: { class: 'form-control' } %>
+                </div>
+                <div class="col-sm-12">
+                  <label for="name" class="h4">Xưng danh</label><br />
+                  <%= f.input :gender, as: :radio_buttons, label: false, collection: ['Anh', 'Chị'],:input_html => {style:'display:block; margin-right: 32px', class: "response-project"} %>
                 </div>
                 <div class="form-group col-sm-12">
                   <label for="phone" class="h4">Số điện thoại</label>
-                  <input type="text" class="form-control" id="phone" placeholder="0967134899" required data-error="Vui lòng nhập số điện thoại">
-                  <div class="help-block with-errors"></div>
+                  <%= f.input :phone, label: false, :input_html => {class: "form-control"} %>
                 </div>
               </div>
-              <button type="submit" id="form-submit" class="btn-action">Gọi điện</button>
-              <div id="msgSubmit" class="h3 text-center hidden"></div>
-              <div class="clearfix"></div>
-            </form>
+              <%= f.button :submit, "Gọi điện", :class => 'btn btn-action text-white rounded' %>
+            <% end %>
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@
     <div id="features" class="flex-split">
       <div class="container-s">
         <div class="flex-intro align-center wow fadeIn">
-          <h2>Tính năng</h2>
+          <h2>uCall mang lại cho doanh nghiệp</h2>
           <p>Chúng tôi thiết kế những công cụ đơn giản, linh hoạt và mạnh mẽ. Bạn có thể dựng tổng đài cho công việc kinh doanh chỉ mất chưa đầy 10 phút.</p>
         </div>
         <div class="flex-inner align-center">
@@ -79,9 +79,13 @@
                   <h6>1</h6>
                 </div>
               </div>
-              <h2>Tổng đài thông minh</h2>
-              <p>Một tổng đài viên thực thụ. Sẵn sàng trả lời mọi câu hỏi của khách hàng</p>
-              <a href="#">Tìm hiểu công nghệ</a>
+              <h2>Tự động chăm sóc khách hàng của bạn mọi lúc mọi nơi</h2>
+              <p>
+                Hệ thống của chúng tôi giúp doanh nghiệp của bạn chuyển đổi tự động hóa những quy trình bán hàng,
+                phục vụ khách hàng 24/7 bằng giọng nói tự nhiên nhất.
+                Mang lại hiệu quả tốt hơn, <span class="font-weight-bold">không giới hạn</span> số cuộc gọi nhận, thực hiện mỗi ngày,
+                tiết kiệm tới <span class="font-weight-bold">80%</span> chi phí của doanh nghiệp.
+              </p>
             </div>
           </div>
         </div>
@@ -97,9 +101,11 @@
                   <h6>2</h6>
                 </div>
               </div>
-              <h2>Cuộc gọi Marketing / Cuộc gọi tự động</h2>
-              <p>Tiếp cận khách hàng của bạn không giới hạn, linh hoạt theo n tình huống</p>
-              <a href="#">Khám phá các tình huống</a>
+              <h2>Phân tích, vẽ chân dung khách hàng một cách chân thực</h2>
+              <p>
+                Bằng những dữ liệu thu thập được, chúng tôi giúp doanh nghiệp xây dựng cái nhìn sâu sắc (insight),
+                vẽ chân dung khách hàng chân thực nhất, có thể giúp bạn Nâng cao 30% doanh số, Tăng 40 % tỷ lệ khách hàng quay lại.
+              </p>
             </div>
           </div>
         </div>
@@ -115,9 +121,8 @@
                   <h6>3</h6>
                 </div>
               </div>
-              <h2>Tích hợp CRM</h2>
-              <p>Sẵn sàng với các nền tảng CRM nổi tiếng như Salesforce, Base</p>
-              <a href="#">Tài liệu thích hợp</a>
+              <h2>Tích hợp nhanh chóng, liền mạch</h2>
+              <p>Giải pháp của chúng tôi có khả năng tích hợp với những hệ thống lõi của doanh nghiệp: CRM, ERP, giúp cải thiện năng suất làm việc, sự hài lòng của khách hàng.</p>
             </div>
           </div>
         </div>
@@ -136,8 +141,10 @@
             <div class="f-text">
               <div class="split_text">
                 <div class="split_text_inner">
-                  <h4>Tối ưu chi phí</h4>
-                  <h2>Tiết kiệm 70% chi phí chăm sóc khách hàng</h2>
+                  <h1>Tính năng chính</h1>
+                  <h2>Tổng đài thông minh</h2>
+                  <h2>Quản lý cuộc gọi</h2>
+                  <h2>Tích hợp CRM</h2>
                 </div>
               </div>
             </div>
@@ -249,9 +256,9 @@
           <div class="flx_1">
             <div class="split_text">
               <div class="split_text_inner">
-                <h2>Cuộc gọi tự đông</h2>
-                <span style="text-decoration: line-through; margin-right: 8px;">649</span>
-                <span>599 đ</span>
+                <h2>uCall Marketing</h2>
+                <span style="text-decoration: line-through; margin-right: 8px;">599</span>
+                <span>539 đ</span>
                 <div class="sub_span">/ phút</div>
                 <ul class="prc_features">
                   <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Gọi điện Marketing</span></li>
@@ -266,9 +273,9 @@
           <div class="flx_2">
             <div class="split_text">
               <div class="split_text_inner">
-                <h2>Cuộc gọi tự động thông minh</h2>
-                <span style="text-decoration: line-through; margin-right: 8px;">1099</span>
-                <span>999 đ</span>
+                <h2>uCall Advanced</h2>
+                <span style="text-decoration: line-through; margin-right: 8px;">999</span>
+                <span>899 đ</span>
                 <div class="sub_span">/ phút</div>
                 <ul class="prc_features">
                   <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Gọi điện Marketing</span></li>
@@ -289,9 +296,9 @@
           <div class="flx_2">
             <div class="split_text">
               <div class="split_text_inner">
-                <h2>Tổng đài tự động</h2>
-                <span style="text-decoration: line-through; margin-right: 8px;">1429</span>
-                <span>1299 đ</span>
+                <h2>uCall Completed</h2>
+                <span style="text-decoration: line-through; margin-right: 8px;">1299</span>
+                <span>1169 đ</span>
                 <div class="sub_span">/ phút</div>
                 <ul class="prc_features">
                   <li><img src="<%= image_path("tick.png") %>" width="14" alt="Tick"> <span>Gọi điện Marketing</span></li>
@@ -310,7 +317,7 @@
           <div class="flx_1">
             <div class="split_text">
               <div class="split_text_inner">
-                <h2>Tư vấn giải pháp riêng</h2>
+                <h2>Enterprise</h2>
                 <span>Vui lòng liên hệ</span>
               </div>
             </div>
@@ -327,7 +334,8 @@
             <div class="col-sm-12 col-md-12">
               <h4>Liên hệ tư vấn giải pháp</h4>
               <h2>Hãy giúp chúng tôi hiểu bạn. Thành công của bạn là động lực với chúng tôi.</h2>
-              <a class="btn-action btn-alt" href="#">Liên hệ</a>
+              <a class="btn-action btn-alt" href="mailto:etronai.team@gmail.com">etronai.team@gmail.com</a><br/>
+              <a class="btn-action btn-alt" href="tel:84327445877">0327445877</a>
             </div>
           </div>
         </div>

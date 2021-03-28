@@ -46,11 +46,11 @@
                 </div>
                 <div class="col-sm-12">
                   <label for="name" class="h4">Xưng danh</label><br />
-                  <%= f.input :gender, as: :radio_buttons, label: false, collection: ['Anh', 'Chị'],:input_html => {style:'display:block; margin-right: 32px', class: "response-project"} %>
+                  <%= f.input :pronoun, as: :radio_buttons, label: false, collection: ['Anh', 'Chị'],:input_html => {style:'display:block; margin-right: 32px', class: "response-project"} %>
                 </div>
                 <div class="form-group col-sm-12">
                   <label for="phone" class="h4">Số điện thoại</label>
-                  <%= f.input :phone, label: false, :input_html => {class: "form-control"} %>
+                  <%= f.input :phone_number, label: false, :input_html => {class: "form-control"} %>
                 </div>
               </div>
               <%= f.button :submit, "Gọi điện", :class => 'btn btn-action text-white rounded' %>

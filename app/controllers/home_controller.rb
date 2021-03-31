@@ -19,7 +19,7 @@ class HomeController < ActionController::Base
 
   private
   def set_variables
-    @app_link = 'https://ucall-app.etronresearch.work/'
-    @api_link = 'http://api.etronresearch.work:10101/v1/api/make-demo-call'
+    @app_link = 'https://app.ucall.cc/'
+    @api_link = 'http://server.etronresearch.work:10101/v1/api/make-demo-call'
   end
 end
